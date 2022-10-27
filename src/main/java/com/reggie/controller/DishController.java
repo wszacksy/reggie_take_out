@@ -68,7 +68,6 @@ public class DishController {
 
         //对象拷贝
         BeanUtils.copyProperties(pageInfo, dishDtoPage, "records");
-
         List<Dish> records = pageInfo.getRecords();
         List<DishDto> list = records.stream().map((item) -> {
             DishDto dishDto = new DishDto();
